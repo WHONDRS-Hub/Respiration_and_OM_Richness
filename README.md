@@ -1,13 +1,9 @@
-# Trait-Based_Chemogeography_of_Organic_Matter_Thermodynamics
+##  Hyporheic Zone Respiration is Constrained by Organic Matter Molecular Richness at the Continental Scale
 
-This GitHub repository is associated with the publication "Trait-Based Chemogeography of Organic Matter Thermodynamics”.
+This GitHub repository is associated with the publication "Hyporheic Zone Respiration is Constrained by Organic Matter Molecular Richness at the Continental Scale”.
 
-The study aims to understand large-scale spatial structure of the OM thermodynamic traits and global inter-trait relationships by investigating: (1) inland surface water and sediments collected along 97 global river corridors; and (2) coastal sediment collected from fresh and saline locations in Pacific and Gulf/Atlantic river corridors. 
+The study aims to test the hypothesis that organic matter (OM) can be protected from degradation (in part) by high levels of molecular diversity, using publicly available data from the Worldwide Hydrobiogeochemical Observation Network for Dynamic River Systems (WHONDRS. 
 
-Sediment extracts and water samples were analyzed using ultrahigh resolution Fourier transform ion cyclotron resonance mass spectrometry (FTICR-MS). This repository is comprised of two folders (1) Coastal, and (2) WHONDR_S19S and is associated with the ESS-DIVE data packagae. 
+Incubation and Field Sediment extracts were analyzed using ultrahigh resolution Fourier transform ion cyclotron resonance mass spectrometry (FTICR-MS). Respiration rates were measured using Incubation sediments following methods described by Garayburu-Caruso et., 2020. This repository contains the R scripts used to generate the figured in the manuscript. 
 
-Coastal contains (1) a subfolder with processed FTICR data as csv files and sample collection metadata, (2) a subfolder with R scripts used to process the data, and create associated figures, (3) a subfolder with the raw, unprocessed FTICR-MS data as .xml files and (4) a readme file with more information about the dataset and instructions for using Formularity (https://omics.pnl.gov/software/formularity). 
-
-WHONDRS_S19S contains (1) a csv file with processed FTICR data, (2) a csv with sample collection metadata, (3) a subfolder with R scripts used to process the data and create associated figures, and (4) a readme file with more information regarding WHONDRS raw FTICR data and processing scripts. 
-
-The 97 global river corridors were part of a WHONDRS (https://whondrs.pnnl.gov) study. The raw, unprocessed FTICR-MS data can be found with additional data at doi:10.15485/1729719, for sediments and doi:10.15485/1603775, for water. This data package contains the processed data used in the associated manuscript. The coastal data has not been previously published, and this data package contains both the raw and processed data.
+The data from the 97 global river corridors used in this manuscript were part of a WHONDRS (https://whondrs.pnnl.gov) study. The raw, unprocessed FTICR-MS data and respiration data can be found with additional data at doi:10.15485/1729719. Processed FTICR-MS data used in this manuscript was processes following instructions provided in the WHONDRS data package. 
