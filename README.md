@@ -1,4 +1,4 @@
-##  Hyporheic Zone Respiration is Constrained by Organic Matter Molecular Richness at the Continental Scale
+#  Hyporheic Zone Respiration is Constrained by Organic Matter Molecular Richness at the Continental Scale
 
 This GitHub repository is associated with the publication "Hyporheic Zone Respiration is Constrained by Organic Matter Molecular Richness at the Continental Scale”.
 
