@@ -13,17 +13,16 @@ rm(list=ls());graphics.off()
 
 #####################################################################################
 # Set directories
-setwd("//PNL/Projects/SBR_SFA/RC4/Respiration_ms/Input/")
-output.dir = ("//PNL/Projects/SBR_SFA/RC4/Respiration_ms/Output/")
+output.dir = ("Output/")
 
 
 # read in the data
 
-respiration.data = read.csv("WHONDRS_S19S_Sediment_Incubations_Respiration_Rates.csv")
-respiration.mass = read.csv("WHONDRS_S19S_Respiration_IncubationData.csv")
-field.data = read.csv("Processed_ICR_Field_Hawkes_Peaks.csv")
-npoc.data = read.csv("WHONDRS_S19S_Sediment_NPOC.csv")
-npoc.to.filter = read.csv("NPOC_ordered_to_filter.csv")
+respiration.data = read.csv("Data/WHONDRS_S19S_Sediment_Incubations_Respiration_Rates.csv")
+respiration.mass = read.csv("Data/WHONDRS_S19S_Respiration_IncubationData.csv")
+field.data = read.csv("Data/Processed_ICR_Field_Hawkes_Peaks.csv")
+npoc.data = read.csv("Data/WHONDRS_S19S_Sediment_NPOC.csv")
+npoc.to.filter = read.csv("Data/NPOC_ordered_to_filter.csv")
 pts.to.remove = 30 # this is an output from 07_Figure_S1 code
 respiration.data = merge(respiration.data,respiration.mass, by = "Sample_ID")
 

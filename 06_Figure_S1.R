@@ -2,14 +2,11 @@ rm(list=ls());graphics.off()
 library(ggplot2)
 #####################################################################################
 # Set directories
-setwd("//PNL/Projects/SBR_SFA/RC4/Respiration_ms/Input/")
-output.dir = ("//PNL/Projects/SBR_SFA/RC4/Respiration_ms/Output/")
-regression.folder = "New_analysis/"
-
+output.dir = ("Output/")
 
 # read in the data
 
-npoc.data = read.csv("WHONDRS_S19S_Sediment_NPOC.csv")
+npoc.data = read.csv("Data/WHONDRS_S19S_Sediment_NPOC.csv")
 
 npoc.data$Type = NA
 
