@@ -149,6 +149,8 @@ ideal.num.segments = 10
   
   mod2 = summary(lm(log(y)~x))
   
+  # Calculating stats for the regressions that use all the points
+  mod02 = summary(lm(log(rate_mg_per_L_per_h)~onesovernpoc, data = all.field.peaks))
   
   #Plots
   library (ggpmisc)
@@ -265,6 +267,9 @@ ideal.num.segments = 10
   mod22 = summary(lm(log(y)~x))
   my.formula22 <- y ~ exp(mod22$coefficients[1,1] + (mod22$coefficients[2,1]*x))
   
+  # Calculating stats for the regressions that use all the points
+  mod022 = summary(lm(log(rate_mass)~onesovernpoc, data = all.field.peaks)) 
+  my.formula022 <- y ~ exp(mod022$coefficients[1,1] + (mod022$coefficients[2,1]*x))
   
   p2 = ggplot(dfi, aes(x = x, y = y)) + 
     #coord_cartesian(xlim = c(0.01,0.3), ylim = c(-8,82))+
@@ -272,6 +277,7 @@ ideal.num.segments = 10
     geom_point(data=all.field.peaks, aes(x=onesovernpoc, y= rate_mass), size = 2, color= "#a29bd5") +
     geom_point(size = 3,color = "#32287d") + 
     geom_smooth(method = "lm", se=TRUE, formula = my.formula22, color = "#32287d") +
+   # geom_smooth(method = "lm", se=TRUE, formula = my.formula022, color = "#a29bd5") +
     # geom_vline(xintercept = peak.segments$Low.boundary[1])+
     # geom_vline(xintercept = peak.segments$High.boundary)+
     geom_text(x=0.023, y=3.1, label="B", size = 5)+

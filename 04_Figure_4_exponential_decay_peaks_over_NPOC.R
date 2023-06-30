@@ -149,6 +149,8 @@ ideal.num.segments = 10
   library (ggpmisc)
   my.formula <- y ~ exp(mod$coefficients[1,1] + (mod$coefficients[2,1]*x))
   
+  # Calculating stats for the regressions that use all the points
+  mod11 = summary(lm(log(rate_mg_per_L_per_h)~peaksovernpoc, data = all.field.peaks))
   
 p1 = ggplot(dfi, aes(x = x, y = y)) + #coord_cartesian(ylim = c(-5,82))+
     geom_point(size = 3,color = "#32287d") + 
@@ -246,6 +248,9 @@ names(dfi)[1]="y";names(dfi)[2]="x"
 dfi=na.omit(dfi)
 
 mod2 = summary(lm(log(y)~x))
+
+# Calculating stats for the regressions that use all the points
+mod22 = summary(lm(log(rate_mass)~peaksovernpoc, data = all.field.peaks))
 
 #Plots
 library (ggpmisc)
