@@ -99,7 +99,7 @@ p2 =  ggplot(all.data.v2, aes(x = X00681_NPOC_mg_per_L_as_C , y = Total_number_o
   geom_text(x=35, y=5000, label=paste0("R^2 == ",round(mod2$r.squared,2)), color = "black", parse = T)+
   geom_text(x=35, y=4850, label=paste0("p < 0.001"),color = "black")+
   geom_smooth(method = "lm", se=TRUE, formula = my.formula2) +
-  theme_bw()+theme(legend.title = element_blank(),  legend.background = element_rect(fill = 'NA'), legend.text = element_text(size=10))+labs(x = expression(NPOC~(mg~L^{-1})), y = "OM Richness")+ 
+  theme_bw()+theme(legend.title = element_blank(),  legend.background = element_rect(fill = 'NA'), legend.text = element_text(size=10))+labs(x = expression(NPOC~(mg~C~L^{-1})), y = "OM Richness")+ 
   theme(legend.position= "")+
   theme(axis.text.x=element_text(size=10))+theme(axis.text.x=element_text(colour = c("black")))+
   theme(aspect.ratio=1)+
@@ -123,7 +123,7 @@ p01 = ggplot(all.data.v2, aes(x = X00681_NPOC_mg_per_L_as_C, y = rate_mg_per_L_p
   #geom_text(x=4600, y=37, label=paste0("p = ",round(mod01$coefficients[2,4],2)),color = "#32287d")+
   geom_text(x=9, y=37, label=paste0("p < 0.001"),color = "black")+
   geom_smooth(method = "lm", se=TRUE, formula = my.formula01) +
-  theme_bw()+theme(legend.title = element_blank(),  legend.background = element_rect(fill = 'NA'), legend.text = element_text(size=10))+labs(y = expression(Respiration~rate~(mg~L^{-1}~h^{-1})), x = expression(NPOC~(mg~L^{-1})))+ 
+  theme_bw()+theme(legend.title = element_blank(),  legend.background = element_rect(fill = 'NA'), legend.text = element_text(size=10))+labs(y = expression(Respiration~rate~(mg~L^{-1}~h^{-1})), x = expression(NPOC~(mg~C~L^{-1})))+ 
   theme(legend.position= "")+
   theme(axis.text.x=element_text(size=10))+theme(axis.text.x=element_text(colour = c("black")))+
   theme(aspect.ratio=1)+
@@ -195,7 +195,7 @@ for (i in 1:ideal.num.segments){
 x = peak.segments$Mid.peaks
 y = peak.segments$Max.resp
 
-label.x =  expression(NPOC~(mg~L^{-1}))
+label.x =  expression(NPOC~(mg~C~L^{-1}))
 label.y =  expression(Respiration~rate~(mg~L^{-1}~h^{-1}))
 
 dfi=as.data.frame(cbind(y,x))
@@ -301,7 +301,7 @@ for (i in 1:ideal.num.segments){
 x = peak.segments$Mid.peaks
 y = peak.segments$Max.resp
 
-label.x =  expression(NPOC~(mg~L^{-1}~h^{-1}))
+label.x =  expression(NPOC~(mg~C~L^{-1}))
 label.y =  expression(Respiration~rate~(mg~L^{-1}~h^{-1}~g^{-1}))
 
 dfi=as.data.frame(cbind(y,x))
